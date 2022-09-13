@@ -1,7 +1,11 @@
 # Programming Paradigm
 
-### Dayan Bravo
+#### Dayan Bravo
 
-Task2
+## Task2
 
-Task3
+### Stack and Queue
+
+## Task3
+
+### Collatz Conjecture (3n+1)
