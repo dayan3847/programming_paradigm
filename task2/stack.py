@@ -14,26 +14,30 @@ if __name__ == '__main__':
     stack = [2,7,9,4]
     on = True
     while on:
+        print('Options')
         print('[1] print')
         print('[2] push')
         print('[3] pop')
         print('[other] exit')
-        opcion = int(input('opcion: '))
-        if 1 == opcion:
+        option = int(input('option: '))
+        if 1 == option:
+            print('Printing...')
             print(stack)
-        elif 2==opcion:
+        elif 2==option:
+            print('Pushing...')
             element = int(input('Enter Element: '))
-            print(f'Before Stack {stack}')
+            print(f'Before stack {stack}')
             push(stack, element)
-            print(f'After Stack {stack}')
-        elif 3==opcion:
+            print(f'After stack {stack}')
+        elif 3==option:
+            print('Pop...')
             if 0<len(stack):
-                print(f'Before Stack {stack}')
+                print(f'Before stack {stack}')
                 element = pop(stack)
                 print(f'Element {element}')
-                print(f'After Stack {stack}')
+                print(f'After stack {stack}')
             else:
-                print('[3] pop')
+                print('Empty stack')
         else:
             on = False #off
             print('Bye')
