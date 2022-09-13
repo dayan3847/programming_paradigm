@@ -1,21 +1,30 @@
 # Task3: Collatz Conjecture
 
-def collatz_conjecture_iterative(number):
-    count = 0
+def collatz_conjecture(number, vervose=False):
+    count = 1
     while number > 1:
-        print(number, end=' ')
+        if vervose:
+            print(number, end=' ')
         number = (number // 2) if number % 2 == 0 else (3*number+1)
         count += 1
-    print(number)
+    if vervose:
+        print(number)
     return count
-
-
-def collatz_conjecture_recursive(number):
-    return 1
-
 
 if __name__ == '__main__':
     print('Collatz Conjecture')
-    number = int(input('Enter a number: '))
-    count = collatz_conjecture_iterative(number)
-    print(f'Count {count}')
+    numbers_string = input('Enter two numbers separated by space: ')
+    numbers=numbers_string.split()
+    if 2 !=len(numbers):
+        print('error')
+    else:
+        n1 = int(numbers[0])
+        n2 = int(numbers[1])
+        number = -1
+        max = -1
+        for i in range(n1, n2+1):
+            count = collatz_conjecture(i)
+            if count > max:
+                max = count
+                number = i
+        print(f'{n1} {n2} {max} number: ({number}) ')
