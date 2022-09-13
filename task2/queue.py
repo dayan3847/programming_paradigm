@@ -19,17 +19,17 @@ if __name__ == '__main__':
         print('[2] enqueue')
         print('[3] dequeue')
         print('[other] exit')
-        option = int(input('option: '))
-        if 1 == option:
+        option = input('option: ')
+        if '1' == option:
             print('Printing...')
             print(queue)
-        elif 2==option:
+        elif '2'==option:
             print('Enqueueing...')
             element = int(input('Enter Element: '))
             print(f'Before queue {queue}')
             enqueue(queue, element)
             print(f'After queue {queue}')
-        elif 3==option:
+        elif '3'==option:
             print('Dequeueing...')
             if 0<len(queue):
                 print(f'Before queue {queue}')

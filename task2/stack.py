@@ -19,17 +19,17 @@ if __name__ == '__main__':
         print('[2] push')
         print('[3] pop')
         print('[other] exit')
-        option = int(input('option: '))
-        if 1 == option:
+        option = input('option: ')
+        if '1' == option:
             print('Printing...')
             print(stack)
-        elif 2==option:
+        elif '2'==option:
             print('Pushing...')
             element = int(input('Enter Element: '))
             print(f'Before stack {stack}')
             push(stack, element)
             print(f'After stack {stack}')
-        elif 3==option:
+        elif '3'==option:
             print('Pop...')
             if 0<len(stack):
                 print(f'Before stack {stack}')
