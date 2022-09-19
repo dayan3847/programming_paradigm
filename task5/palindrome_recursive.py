@@ -8,6 +8,10 @@ def palindrome_recursive(word):
     return palindrome_recursive(word[1:-1])
 
 
+def palindrome_recursive_single_line(word):
+    return 1 >= len(word) or (word[0] == word[-1] and palindrome_recursive(word[1:-1]))
+
+
 if __name__ == '__main__':
     print('Task5: Palindrome Recursive')
     my_word = input('Enter a Word: ')
