@@ -1,5 +1,6 @@
-def jolly_jumers(linea):
+# Task4: Jolly Jumpers
 
+def jolly_jumpers(linea):
     if len(linea) == 1:
         print("Jolly")
     else:
@@ -11,7 +12,7 @@ def jolly_jumers(linea):
             resultados = []
             i = 0
 
-            while i < len(linea)-1 and is_jolly:
+            while i < len(linea) - 1 and is_jolly:
                 resultado = abs(linea[i] - linea[i + 1])
                 if resultado in resultados:
                     print("Not Jolly")
@@ -35,7 +36,7 @@ if __name__ == '__main__':
             linea = []
             linea.append(cantidad)
             añadir = True
-            while(añadir):
+            while (añadir):
                 valor = input("Entre un numero entero entre la letra n para continuar: ")
                 if valor != "n":
                     linea.append(int(valor))
@@ -46,5 +47,4 @@ if __name__ == '__main__':
     except:
         print("Solo debe introducir numeros enteros.")
 
-    jolly_jumers(linea)
-
+    jolly_jumpers(linea)
