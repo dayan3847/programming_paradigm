@@ -1,14 +1,6 @@
 # Task5: Palindrome Recursive
 
 def palindrome_recursive(word):
-    if 1 >= len(word):
-        return True
-    if word[0] != word[-1]:
-        return False
-    return palindrome_recursive(word[1:-1])
-
-
-def palindrome_recursive_single_line(word):
     return 1 >= len(word) or (word[0] == word[-1] and palindrome_recursive(word[1:-1]))
 
 
