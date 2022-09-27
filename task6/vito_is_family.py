@@ -1,5 +1,20 @@
 # Task6: Vito’s Family
 
+def cal_median(house_arr):
+    house_arr.sort()
+    median_index = int(len(house_arr) / 2)
+    return house_arr[median_index]
+
+
+def minimal_distance(house_arr):
+    result = 0
+    median = cal_median(house_arr)
+    for h in house_arr:
+        result += abs(h - median)
+
+    return result
+
+
 def get_house_list(input_string):
     result = []
     input_string_array = input_string.split()
@@ -18,8 +33,8 @@ def validate_case(input_string):
     if 0 >= house_count or 500 <= house_count or input_string_array_len - 1 != house_count:
         return False
     for e in range(1, input_string_array_len):
-        house = int(input_string_array[i])
-        if 0 >= house or 30000 <= house:
+        i_house = int(input_string_array[i])
+        if 0 >= i_house or 30000 <= i_house:
             return False
     return True
 
@@ -40,4 +55,6 @@ if __name__ == '__main__':
     houses = []
     for i_input in my_inputs:
         houses.append(get_house_list(i_input))
-    print(houses)
+    print('Output:')
+    for house in houses:
+        print(minimal_distance(house))
