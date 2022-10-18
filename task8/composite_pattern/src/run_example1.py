@@ -1,23 +1,27 @@
 # Task8: Composite Pattern
+from task8.composite_pattern.src.Directory import Directory
+from task8.composite_pattern.src.File import File
 
 if __name__ == '__main__':
+    pp = File('Programming Paradigm')
+    print(pp.show())
 
+    dm = File('Discrete Mathematics')
+    ct = File('Computational Theory')
+    rs = File('Research Seminar')
 
+    mcc = Directory('MCC')
+    print(mcc.show())
 
+    mcc.add_item(pp)
+    mcc.add_item(dm)
+    mcc.add_item(ct)
+    mcc.add_item(rs)
+    print(mcc.show())
 
-    print('Collatz Conjecture')
-    numbers_string = input('Enter two numbers separated by space: ')
-    numbers = numbers_string.split()
-    if 2 != len(numbers):
-        print('error')
-    else:
-        n1 = int(numbers[0])
-        n2 = int(numbers[1])
-        number = -1
-        max = -1
-        for i in range(n1, n2 + 1):
-            count = collatz_conjecture(i)
-            if count > max:
-                max = count
-                number = i
-        print(f'{n1} {n2} {max} number: ({number}) ')
+    mia = Directory('MIA')
+
+    uady = Directory('UADY')
+    uady.add_item(mcc)
+    uady.add_item(mia)
+    print(uady.show())
