@@ -6,7 +6,7 @@
 
 - ghci Arbol.hs // ejemplo de abrir el programa Arbol en el interprete ghci de haskell
 
-    - ejemplo de suso del programa Arbol
+    - ejemplo de uso del programa Arbol
 
         ### Arbol de ejemplo
             
