@@ -37,5 +37,5 @@
 - Referencias y docs
   - https://gist.github.com/anscharivs/d09357dd8688211a4d852e500fd697b9
   - https://www.youtube.com/watch?v=D2xsaA_YERY&list=PLD2wfKpqmxnkHPK_Tzv80HCwOaYph33pH
-
+  - https://extranet.matematicas.uady.mx/enlinea/pluginfile.php/8543/mod_resource/content/1/Piensa_en_Haskell.pdf 
     
