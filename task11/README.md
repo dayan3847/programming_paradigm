@@ -34,5 +34,8 @@
             *Main> postorden ejemplo
             [3,18,17,19,71,110,108,245,240,104]
 
+- Referencias y docs
+  - https://gist.github.com/anscharivs/d09357dd8688211a4d852e500fd697b9
+  - https://www.youtube.com/watch?v=D2xsaA_YERY&list=PLD2wfKpqmxnkHPK_Tzv80HCwOaYph33pH
 
     
