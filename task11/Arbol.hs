@@ -1,4 +1,4 @@
--- Estructura del árbol
+{- Estructura del árbol -}
 data Abb a = Vacio | Nodo a (Abb a) (Abb a) deriving (Show)
 
 -- Insertar un nuevo nodo a un árbol definido
